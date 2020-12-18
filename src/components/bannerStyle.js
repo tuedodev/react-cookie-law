@@ -14,11 +14,18 @@ export default {
     marginRight: 'auto',
     overflow: 'hidden',
   },
-  message: {
+  messageHeader: {
     minHeight: '32px',
-    fontSize: '10pt',
+    fontSize: '1.2rem',
+    fontWeight: '700',
+    lineHeight: '1.15',
+    padding: '10px 0',
+    color: '#000000',
+  },
+  messageSubheader: {
+    fontSize: '0.8rem',
     fontWeight: '400',
-    lineHeight: '130%',
+    lineHeight: '1.3',
     padding: '10px 0',
     color: '#000000',
   },

@@ -6,7 +6,8 @@ export default (props = {}) => {
   const {
     styles = {},
     className = '',
-    message = 'No text',
+    messageHeader = 'No text',
+    messageSubheader = '',
     policyLink = '/#',
     privacyPolicyLinkText = 'Privacy Policy',
     necessaryOptionText = 'Necessary',
@@ -29,7 +30,8 @@ export default (props = {}) => {
   const {
     dialog: dialogStyle,
     container: containerStyle,
-    message: messageStyle,
+    messageHeader: messageHeaderStyle,
+    messageSubheader: messageSubheaderStyle,
     policy: policyStyle,
     selectPane: selectPaneStyle,
     optionWrapper: optionWrapperStyle,
@@ -44,7 +46,10 @@ export default (props = {}) => {
   return (
     <div className={`react-cookie-law-dialog ${className}`} style={dialogStyle}>
       <div className="react-cookie-law-container" style={containerStyle}>
-        <div className="react-cookie-law-msg" style={messageStyle}>{message}</div>
+        <div className="react-cookie-law-msg">
+          <div style="messageHeaderStyle">{messageHeader}</div>
+          <div style="messageSubheaderStyle">{messageSubheader}</div>
+        </div>
 
         <div className="react-cookie-law-select-pane" style={selectPaneStyle}>
           <CookieOption

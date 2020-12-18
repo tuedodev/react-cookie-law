@@ -160,7 +160,8 @@ class CookieBanner extends React.Component {
     const {
       styles,
       className,
-      message,
+      messageHeader,
+      messageSubheader,
       policyLink,
       privacyPolicyLinkText,
       necessaryOptionText,
@@ -183,7 +184,8 @@ class CookieBanner extends React.Component {
     const contentProps = {
       styles,
       className,
-      message,
+      messageHeader,
+      messageSubheader,
       policyLink,
       privacyPolicyLinkText,
       necessaryOptionText,
@@ -210,7 +212,8 @@ class CookieBanner extends React.Component {
 CookieBanner.protoTypes = {
   className: PropTypes.string,
   styles: PropTypes.object,
-  message: PropTypes.string.isRequired,
+  messageHeader: PropTypes.string.isRequired,
+  messageSubheader: PropTypes.string,
   wholeDomain: PropTypes.bool,
   policyLink: PropTypes.string,
   privacyPolicyLinkText: PropTypes.string,
